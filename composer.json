@@ -1,0 +1,25 @@
+{
+  "name": "ryvova/algotech",
+  "description": "Working with fractions",
+  "autoload": {
+    "psr-4": {
+      "Algotech\\": "src/",
+      "Algotech\\Tests\\": "tests/PHPUnitTests/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "phpunit": "php.exe C:/xampp/htdocs/Algotech/vendor/phpunit/phpunit/phpunit tests",
+    "codecoverage": "php.exe C:/xampp/htdocs/Algotech/vendor/phpunit/phpunit/phpunit --coverage-html=c:/xampp/htdocs/Algotech/coverage-reports tests",
+    "stan": "vendor/bin/phpstan analyse src tests --level 9"
+  },
+  "require": {
+    "php": ">=8.2",
+    "ext-intl": "*"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^1.11.0",
+    "phpunit/phpunit": "^9"
+  }
+}
